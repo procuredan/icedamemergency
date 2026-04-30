@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice Dam Emergency | Ice Dam Removal, Roof Leak & Insurance Claim Help</title>
+  <meta name="description" content="Ice dam causing roof leaks or water damage? Get connected with local ice dam removal, roof repair, water damage, and insurance claim help fast." />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background: #f5f8fb;
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .topbar {
+      background: #0f2742;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    header {
+      background: #fff;
+      padding: 18px 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      color: #0f2742;
+    }
+    .brand span { color: #1677c8; }
+    .phone {
+      font-weight: 800;
+      color: #0f2742;
+      text-decoration: none;
+    }
+    .hero {
+      background: linear-gradient(135deg, rgba(15,39,66,.94), rgba(22,119,200,.82)), url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1800&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 70px 20px;
+    }
+    .hero-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,.16);
+      border: 1px solid rgba(255,255,255,.28);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.02;
+      margin: 0 0 20px;
+      letter-spacing: -2px;
+    }
+    .hero p {
+      font-size: 21px;
+      margin: 0 0 26px;
+      max-width: 650px;
+    }
+    .hero-bullets {
+      display: grid;
+      gap: 10px;
+      margin-top: 24px;
+      font-weight: 700;
+    }
+    .hero-bullets div::before {
+      content: "✓";
+      margin-right: 10px;
+      color: #9ee6ff;
+    }
+    .form-card {
+      background: #fff;
+      color: #172033;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.22);
+    }
+    .form-card h2 {
+      margin: 0 0 8px;
+      color: #0f2742;
+      font-size: 28px;
+      letter-spacing: -1px;
+    }
+    .form-card p {
+      margin: 0 0 18px;
+      color: #526074;
+      font-size: 15px;
+    }
+    label {
+      display: block;
+      font-weight: 800;
+      margin: 12px 0 6px;
+      font-size: 14px;
+      color: #253247;
+    }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid #cfd8e3;
+      border-radius: 10px;
+      padding: 13px 14px;
+      font-size: 16px;
+      outline: none;
+      background: #fff;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #1677c8;
+      box-shadow: 0 0 0 3px rgba(22,119,200,.12);
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    button {
+      width: 100%;
+      margin-top: 18px;
+      border: none;
+      border-radius: 12px;
+      background: #ff7a1a;
+      color: #fff;
+      padding: 16px 18px;
+      font-size: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(255,122,26,.28);
+    }
+    button:hover { background: #ed6d10; }
+    .privacy {
+      font-size: 12px !important;
+      color: #718096 !important;
+      margin-top: 12px !important;
+    }
+    section { padding: 64px 20px; }
+    .container { max-width: 1120px; margin: 0 auto; }
+    .section-title {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.1;
+      margin: 0 0 14px;
+      letter-spacing: -1.2px;
+      color: #0f2742;
+    }
+    .section-sub {
+      font-size: 19px;
+      color: #526074;
+      max-width: 760px;
+      margin: 0 0 34px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(15,39,66,.08);
+      border: 1px solid #e6edf5;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: #0f2742;
+      font-size: 21px;
+    }
+    .card p { margin: 0; color: #526074; }
+    .warning {
+      background: #fff;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      align-items: center;
+    }
+    .list {
+      display: grid;
+      gap: 13px;
+      margin-top: 22px;
+    }
+    .list div {
+      background: #f5f8fb;
+      border: 1px solid #e6edf5;
+      padding: 14px 16px;
+      border-radius: 12px;
+      font-weight: 800;
+    }
+    .list div::before {
+      content: "⚠";
+      margin-right: 10px;
+      color: #ff7a1a;
+    }
+    .blue {
+      background: #0f2742;
+      color: #fff;
+    }
+    .blue .section-title, .blue h3 { color: #fff; }
+    .blue .section-sub, .blue p { color: #d8e7f5; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      counter-reset: step;
+    }
+    .step {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      display: inline-flex;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background: #ff7a1a;
+      color: #fff;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .cta {
+      text-align: center;
+      background: #eaf4ff;
+    }
+    .cta .button-link {
+      display: inline-block;
+      background: #ff7a1a;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 28px;
+      border-radius: 12px;
+      font-weight: 900;
+      font-size: 18px;
+      margin-top: 12px;
+    }
+    footer {
+      padding: 32px 20px;
+      background: #071827;
+      color: #b7c6d6;
+      font-size: 13px;
+    }
+    footer .container {
+      display: grid;
+      gap: 10px;
+    }
+    @media (max-width: 860px) {
+      .hero-wrap, .split { grid-template-columns: 1fr; }
+      .cards, .steps { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 1fr; }
+      .hero { padding: 44px 16px; }
+      section { padding: 46px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Ice dam, roof leak, or insurance problem? Get connected with help fast.</div>
+
+  <header>
+    <div class="nav">
+      <div class="brand">IceDam<span>Emergency</span>.com</div>
+      <a class="phone" href="#lead-form">Get Help Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-wrap">
+        <div>
+          <div class="eyebrow">Emergency Ice Dam Help</div>
+          <h1>Ice Dam Causing Roof Leaks? Get Help Before It Gets Worse.</h1>
+          <p>We connect homeowners with local ice dam removal, roof repair, water damage, and insurance claim professionals.</p>
+          <div class="hero-bullets">
+            <div>Ice dam removal and roof leak help</div>
+            <div>Water damage and ceiling leak support</div>
+            <div>Denied or underpaid insurance claim help</div>
+          </div>
+        </div>
+
+        <div class="form-card" id="lead-form">
+          <h2>Get Help Now</h2>
+          <p>Tell us what happened. A local professional may contact you shortly.</p>
+
+          <!-- Replace YOUR_FORMSPREE_ENDPOINT_HERE with your real Formspree endpoint -->
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT_HERE" method="POST">
+            <input type="hidden" name="source" value="icedamemergency.com" />
+
+            <label for="zip">Zip Code</label>
+            <input id="zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" placeholder="Enter zip code" required />
+
+            <label for="issue">What's happening?</label>
+            <select id="issue" name="issue" required>
+              <option value="">Select one</option>
+              <option>Ice dam on roof</option>
+              <option>Water leaking inside</option>
+              <option>Ceiling or wall damage</option>
+              <option>Roof leaking after snow melt</option>
+              <option>Insurance denied claim</option>
+              <option>Insurance paid too little</option>
+            </select>
+
+            <div class="row">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Full name" required />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required />
+              </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" required />
+
+            <label for="details">Anything else we should know?</label>
+            <textarea id="details" name="details" rows="3" placeholder="Example: water is leaking through the ceiling"></textarea>
+
+            <button type="submit">Find Help Near Me</button>
+            <p class="privacy">By submitting, you agree to be contacted about your request. This is a free service. IceDamEmergency.com is not a contractor, insurance company, public adjuster, or law firm.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="warning">
+      <div class="container split">
+        <div>
+          <h2 class="section-title">Ice Dam Damage Can Spread Fast</h2>
+          <p class="section-sub">When melting snow backs up under shingles, water can leak into attics, ceilings, walls, insulation, and electrical areas.</p>
+        </div>
+        <div class="list">
+          <div>Ceiling stains and active leaks</div>
+          <div>Wet insulation and attic damage</div>
+          <div>Mold risk after water sits</div>
+          <div>Insurance disputes and low payouts</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">What We Help With</h2>
+        <p class="section-sub">One ice dam can create several problems. We help route your request to the right type of professional.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>Ice Dam Removal</h3>
+            <p>Get connected with local pros who remove ice dams and roof snow safely.</p>
+          </div>
+          <div class="card">
+            <h3>Roof Leak Repair</h3>
+            <p>Find help for leaks caused by snow melt, ice buildup, shingles, flashing, or gutters.</p>
+          </div>
+          <div class="card">
+            <h3>Water Damage</h3>
+            <p>Ceiling, wall, attic, and insulation damage may need drying, cleanup, and repairs.</p>
+          </div>
+          <div class="card">
+            <h3>Insurance Claim Help</h3>
+            <p>If your claim was denied, delayed, or underpaid, you may have options before accepting it.</p>
+          </div>
+          <div class="card">
+            <h3>Denied Claims</h3>
+            <p>Some homeowners are told ice dam damage is not covered. Get help reviewing next steps.</p>
+          </div>
+          <div class="card">
+            <h3>Underpaid Claims</h3>
+            <p>If the insurance payout seems too low, a claim professional may be able to help.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blue">
+      <div class="container">
+        <h2 class="section-title">Don't Accept a Denied or Low Insurance Claim Too Quickly</h2>
+        <p class="section-sub">Ice dam claims can be confusing. Some homeowners are told the damage is maintenance-related, not covered, or worth less than the actual repair cost. Before accepting the insurance company's decision, get connected with someone who understands property damage claims.</p>
+        <div class="steps">
+          <div class="step">
+            <h3>Tell Us What Happened</h3>
+            <p>Submit your zip code, contact info, and the type of ice dam damage you're dealing with.</p>
+          </div>
+          <div class="step">
+            <h3>We Route the Request</h3>
+            <p>Emergency removal, roof leak, water damage, or insurance issue — the right category matters.</p>
+          </div>
+          <div class="step">
+            <h3>Get Contacted</h3>
+            <p>A local professional may reach out to discuss your options and next steps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2 class="section-title">Ice Dam Trouble? Start Here.</h2>
+        <p class="section-sub" style="margin-left:auto;margin-right:auto;">Whether you need emergency removal, roof leak repair, water damage help, or insurance claim support, submit the form and get connected.</p>
+        <a class="button-link" href="#lead-form">Get Help Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>IceDamEmergency.com</strong>
+      <div>Powered by Fix13. IceDamEmergency.com connects consumers with independent service providers. We are not a contractor, insurance company, public adjuster, or law firm. Submitting a request does not create a professional relationship and does not guarantee service availability.</div>
+    </div>
+  </footer>
+
+  <script>
+    const phoneInput = document.getElementById('phone');
+    phoneInput.addEventListener('input', function (e) {
+      const x = e.target.value.replace(/\D/g, '').substring(0, 10);
+      const area = x.substring(0, 3);
+      const middle = x.substring(3, 6);
+      const last = x.substring(6, 10);
+      if (x.length > 6) e.target.value = `(${area}) ${middle}-${last}`;
+      else if (x.length > 3) e.target.value = `(${area}) ${middle}`;
+      else if (x.length > 0) e.target.value = `(${area}`;
+    });
+  </script>
+</body>
+</html>
